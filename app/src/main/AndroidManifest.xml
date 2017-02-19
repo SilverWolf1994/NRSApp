@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sngapp.android.unisinu.com.nrsapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_aplicacion"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UsuarioLogin"
+            android:label="@string/title_activity_usuario_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UsuarioFormato"
+            android:label="@string/title_activity_usuario_formato"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PacienteRegistrar"
+            android:label="@string/title_activity_paciente_registrar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UsuarioRegistrar"
+            android:label="@string/title_activity_usuario_registrar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PacientesRiesgo"
+            android:label="@string/title_activity_pacientes_riesgo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

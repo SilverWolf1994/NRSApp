@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sngapp.android.unisinu.com.nrsapp.UsuarioFormato"
+    tools:showIn="@layout/activity_usuario_formato">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="0"
+                    android:text="@string/auxiliar_medico" />
+
+                <TextView
+                    android:id="@+id/tvNombreAuxiliarValoracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/vacio" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="0"
+                    android:text="@string/cedula_paciente" />
+
+                <EditText
+                    android:id="@+id/etCedulaPacienteValoracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:hint="@string/digite_cedula_paciente" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="0"
+                    android:text="@string/hora_fecha" />
+
+                <TextView
+                    android:id="@+id/tvHoraFechaValoracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/vacio" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:background="#88AAD4"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="@string/preguntas" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_weight="0"
+                        android:text="@string/respuestas" />
+                </TableRow>
+
+                <TableRow
+                    android:background="#ECEFF1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="@string/pregunta1"
+                        android:gravity="center"
+                        android:layout_weight="1" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0"
+                        android:weightSum="0">
+
+                        <RadioButton
+                            android:id="@+id/rbSiResp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/si"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoResp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:background="#ECEFF1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="@string/pregunta2"
+                        android:gravity="center"
+                        android:layout_weight="1" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0">
+
+                        <RadioButton
+                            android:id="@+id/rbSiResp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/si"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoResp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </TableRow>
+                <TableRow
+                    android:background="#ECEFF1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="@string/pregunta3"
+                        android:gravity="center"
+                        android:layout_weight="1" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbSiResp3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/si"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoResp3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </TableRow>
+                <TableRow
+                    android:background="#ECEFF1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="@string/pregunta4"
+                        android:gravity="center"
+                        android:layout_weight="1" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbSiResp4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/si"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoResp4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/bPacientesRiesgoValoracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FF5544"
+                android:text="@string/listado_pacientes_riesgo" />
+
+            <Button
+                android:id="@+id/bRegistrarPacienteValoracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#44DDAA"
+                android:text="@string/registrar_paciente" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
